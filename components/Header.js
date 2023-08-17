@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { HomeIcon, InformationCircleIcon } from '@heroicons/react/24/solid'
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
@@ -10,7 +11,8 @@ export default function Header() {
             <MenuItem title='ABOUT' address='/about' Icon={InformationCircleIcon} />
         </div>
 
-        <div className="">
+        <div className="flex items-center space-x-3">
+            <DarkModeSwitch />
             <Link href="/">
                 <h2 className="text-2xl space-x-1"><span className="font-bold bg-amber-500 py-1 px-2 rounded-lg">IMDb</span><span className="text-xl hidden sm:inline">Clone</span></h2>
             </Link>

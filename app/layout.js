@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
+import Providers from './Providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,13 +17,15 @@ export default function RootLayout({ children }) {
 
 
       <body className={inter.className}>
-        {/* Header */}
-        <Header />
-        {/* Navbar */}
+        <Providers>
+          {/* Header */}
+          <Header />
+          {/* Navbar */}
 
-        {/* Search box */}
+          {/* Search box */}
 
-        {children}
+          {children}
+        </Providers>
       </body>
       
     </html>
