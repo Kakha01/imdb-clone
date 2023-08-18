@@ -15,8 +15,8 @@ export default function DarkModeSwitch() {
   return (
     <>
         {mounted && currentTheme === "dark" ?
-        (<SunIcon className='h-5 w-5 hover:text-amber-500 cursor-pointer' onClick={() => setTheme("light")} />) : 
-        (<MoonIcon className='h-5 w-5 hover:text-amber-500 cursor-pointer' onClick={() => setTheme("dark")} />)}
+        (<SunIcon className='h-5 w-5 hover:text-yellow-500 cursor-pointer' onClick={() => setTheme("light")} />) : 
+        (<MoonIcon className='h-5 w-5 hover:text-yellow-500 cursor-pointer' onClick={() => setTheme("dark")} />)}
     </>
   )
 }

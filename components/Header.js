@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex items-center space-x-3">
             <DarkModeSwitch />
             <Link href="/">
-                <h2 className="text-2xl space-x-1"><span className="font-bold bg-amber-500 py-1 px-2 rounded-lg">IMDb</span><span className="text-xl hidden sm:inline">Clone</span></h2>
+                <h2 className="text-2xl space-x-1"><span className="font-extrabold bg-yellow-500 py-1 px-2 rounded-md text-black">IMDb</span><span className="text-xl hidden sm:inline">Clone</span></h2>
             </Link>
         </div>
     </div>
