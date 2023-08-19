@@ -19,7 +19,7 @@ export default function Card({result}) {
         <h2 className="font-semibold line-clamp-1 text-slate-900 dark:text-yellow-400 ">{result.title || result.original_title || result.name}</h2>
         <p className="line-clamp-2">{result.overview}</p>
       </div>
-      <p className="bg-yellow-500 px-2 sm:rounded-b-sm text-black font-semibold py-2 sm:py-0">Release Year: {result.release_date.slice(0, 4) || result.first_air_date.slice(0, 4)}</p>
+      {result.release_date || result.first_air_date ? (<p className="bg-yellow-500 px-2 sm:rounded-b-sm text-black font-semibold py-2 sm:py-0">Release Year: {result.release_date.slice(0, 4) || result.first_air_date.slice(0, 4)}</p>) : ""}
     </div>
   )
 }
